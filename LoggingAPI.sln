@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingAPI", "LoggingAPI\LoggingAPI.csproj", "{76E6F76E-F85E-40C0-BDD9-55189361F470}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DC696626-2196-42EE-9ECF-FA66F3E2C141}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.env = .env
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingAPI.Models", "LoggingAPI.Models\LoggingAPI.Models.csproj", "{1C3EC458-7E10-45E3-9CE8-BC8DEA63385E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingAPI.Contracts", "LoggingAPI.Contracts\LoggingAPI.Contracts.csproj", "{DB93C817-D0FA-4A5C-BB0B-258EB72F267A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingAPI.Abstractions", "LoggingAPI.Abstractions\LoggingAPI.Abstractions.csproj", "{9D1C1522-F3D9-4479-A0B5-7D92FE1D06E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggingAPI.PostgresDb", "LoggingAPI.PostgresDb\LoggingAPI.PostgresDb.csproj", "{FA5F34F0-3E73-47CA-AF40-2CBA620AE11C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F2E47B88-7B7C-405A-B849-E5A43A4DE802}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76E6F76E-F85E-40C0-BDD9-55189361F470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E6F76E-F85E-40C0-BDD9-55189361F470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E6F76E-F85E-40C0-BDD9-55189361F470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E6F76E-F85E-40C0-BDD9-55189361F470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3EC458-7E10-45E3-9CE8-BC8DEA63385E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3EC458-7E10-45E3-9CE8-BC8DEA63385E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3EC458-7E10-45E3-9CE8-BC8DEA63385E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3EC458-7E10-45E3-9CE8-BC8DEA63385E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB93C817-D0FA-4A5C-BB0B-258EB72F267A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB93C817-D0FA-4A5C-BB0B-258EB72F267A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB93C817-D0FA-4A5C-BB0B-258EB72F267A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB93C817-D0FA-4A5C-BB0B-258EB72F267A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D1C1522-F3D9-4479-A0B5-7D92FE1D06E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D1C1522-F3D9-4479-A0B5-7D92FE1D06E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D1C1522-F3D9-4479-A0B5-7D92FE1D06E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D1C1522-F3D9-4479-A0B5-7D92FE1D06E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA5F34F0-3E73-47CA-AF40-2CBA620AE11C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5F34F0-3E73-47CA-AF40-2CBA620AE11C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5F34F0-3E73-47CA-AF40-2CBA620AE11C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA5F34F0-3E73-47CA-AF40-2CBA620AE11C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E47B88-7B7C-405A-B849-E5A43A4DE802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E47B88-7B7C-405A-B849-E5A43A4DE802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E47B88-7B7C-405A-B849-E5A43A4DE802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E47B88-7B7C-405A-B849-E5A43A4DE802}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D668689E-08FC-4030-B45E-4AACA13963C6}
+	EndGlobalSection
+EndGlobal

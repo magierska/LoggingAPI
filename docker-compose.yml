@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  loggingapi:
+    image: loggingapi:latest
+    ports:
+      - "5000:80" 
+    depends_on:
+      - database
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - default  
+    env_file: .env
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+  
+  database:
+    image: postgres:latest
+    command: postgres -c 'max_connections=500'
+    ports:
+      - "5432:5432"
+    restart: always
+    volumes:
+      - ./LoggingAPI.PostgresDb/init_scripts:/docker-entrypoint-initdb.d
+    env_file:
+      - .env
+
+volumes:
+  data:
